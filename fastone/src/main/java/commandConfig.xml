@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commandEventList>
+	<commandEvent id="help">
+		<name>Help Menu</name>
+		<description>List Menu Commands</description>
+		<listener>com.simplegame.fastone.command.impl.HelpListener</listener>
+	</commandEvent>
+	<commandEvent id="load">
+		<name>Load Saved Game</name>
+		<description>Load Saved Game</description>
+		<listener>com.simplegame.fastone.command.impl.LoadListener</listener>
+	</commandEvent>
+	<commandEvent id="save">
+		<name>Save</name>
+		<description>Command to Save the current game</description>
+		<listener>com.simplegame.fastone.command.impl.SaveListener</listener>
+	</commandEvent>
+	<commandEvent id="quit">
+		<name>Save</name>
+		<description>Command to Save the current game</description>
+		<listener>com.simplegame.fastone.command.impl.QuitListener</listener>
+	</commandEvent>	
+</commandEventList>
