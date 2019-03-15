@@ -77,7 +77,7 @@ public class CommandFactory {
 	      Document document;
 		try {
 			builder = factory.newDocumentBuilder();
-			document = builder.parse(CommandFactory.class.getResourceAsStream("/commandConfig.xml"));
+			document = builder.parse(CommandFactory.class.getClassLoader().getResourceAsStream("commandConfig.xml"));
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			throw new BaseGameException(MsgLoader.getMsgByKey("erro.configload"), e.fillInStackTrace());
 			
